@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#112a2c">
+  <meta name="description" content="Isidris — a customizable, story-driven browser game starter.">
+  <title>Isidris | After the Drowning</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand-area">
+        <div class="brand-mark" aria-hidden="true"><span>✦</span><span class="brand-waves">≋</span></div>
+        <div>
+          <div class="brand-overline">A WORLD IN THE WAKE OF RUIN</div>
+          <h1 id="game-title">ISIDRIS</h1>
+          <div class="brand-subtitle" id="game-subtitle">After the Drowning</div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="epoch"><span class="epoch-dot"></span><span id="game-era">THE FIRST YEARS OF EXILE</span></div>
+        <button type="button" class="reset-btn" id="reset-game" title="Erase your local save and begin again">↺ New game</button>
+      </div>
+    </header>
+
+    <div class="game-layout">
+      <main class="main-column" aria-label="Game console">
+        <section class="console-panel" aria-labelledby="console-heading">
+          <div class="panel-bar">
+            <div class="panel-label"><span class="small-diamond" aria-hidden="true">◆</span> <span id="console-heading">THE WORLD</span></div>
+            <div class="panel-marker"><span id="turn-indicator">TURN 001</span><span class="marker-divider">/</span><span id="region-indicator">OUTER ISLES</span></div>
+          </div>
+          <div class="scene-visual" id="scene-visual">
+            <img id="scene-image" src="assets/scenes/salt-steps.svg" alt="A coastal harbor with stone steps leading into the sea">
+            <div class="scene-image-tint" aria-hidden="true"></div>
+            <div class="scene-stamp"><span class="stamp-line"></span><span id="scene-chapter">CHAPTER I · THE SHORE</span></div>
+            <div class="scene-image-footer"><span id="scene-region">THE OUTER ISLES</span><span class="scene-image-symbol" aria-hidden="true">✧</span></div>
+          </div>
+
+          <div class="story-body">
+            <div class="section-eyebrow"><span class="eyebrow-icon" aria-hidden="true">✧</span> CURRENT LOCATION</div>
+            <h2 id="location-title">The Salt Steps</h2>
+            <div id="location-description" class="location-description" aria-live="polite"></div>
+            <div class="thin-rule"><span aria-hidden="true">❖</span></div>
+            <div class="choices-heading"><h3>What will you do?</h3><span id="choice-count"></span></div>
+            <div id="choices" class="choice-list" aria-label="Available actions"></div>
+          </div>
+        </section>
+
+      </main>
+
+      <aside class="sidebar" aria-label="Character and information">
+        <section class="character-panel">
+          <div class="sidebar-heading"><span>THE TRAVELER</span><span class="sidebar-ornament" aria-hidden="true">✦ ✦ ✦</span></div>
+          <div class="character-profile">
+            <div class="character-portrait" aria-hidden="true"><span>✺</span><span class="portrait-horizon"></span></div>
+            <div class="character-identity"><div class="character-role">WANDERER OF THE OUTER ISLES</div><h2 id="character-name">The Wanderer</h2><p id="character-location">The Salt Steps</p></div>
+          </div>
+          <div class="character-stats">
+            <div class="stat-box"><span class="stat-symbol" aria-hidden="true">◈</span><span class="stat-value" id="stat-silver">12</span><span class="stat-label">SILVER</span></div>
+            <div class="stat-box"><span class="stat-symbol" aria-hidden="true">✧</span><span class="stat-value" id="stat-renown">0</span><span class="stat-label">RENOWN</span></div>
+            <div class="stat-box"><span class="stat-symbol" aria-hidden="true">⌁</span><span class="stat-value" id="stat-visited">1</span><span class="stat-label">PLACES</span></div>
+          </div>
+        </section>
+
+        <section class="archive-panel" aria-label="Game sidebar tabs">
+          <div class="archive-title"><span>THE TRAVELER'S RECORD</span><span class="archive-title-art" aria-hidden="true">⟡</span></div>
+          <div class="tab-bar" role="tablist" aria-label="Traveler records">
+            <button type="button" role="tab" data-tab="equipment" id="tab-equipment" aria-controls="tab-panel" aria-selected="true" class="tab active"><span class="tab-glyph" aria-hidden="true">⚔</span> Equipment</button>
+            <button type="button" role="tab" data-tab="quests" id="tab-quests" aria-controls="tab-panel" aria-selected="false" class="tab"><span class="tab-glyph" aria-hidden="true">⚑</span> Quests</button>
+            <button type="button" role="tab" data-tab="lore" id="tab-lore" aria-controls="tab-panel" aria-selected="false" class="tab"><span class="tab-glyph" aria-hidden="true">✥</span> Lore</button>
+            <button type="button" role="tab" data-tab="map" id="tab-map" aria-controls="tab-panel" aria-selected="false" class="tab"><span class="tab-glyph" aria-hidden="true">⌖</span> Map</button>
+            <button type="button" role="tab" data-tab="journal" id="tab-journal" aria-controls="tab-panel" aria-selected="false" class="tab"><span class="tab-glyph" aria-hidden="true">☷</span> Journal</button>
+          </div>
+          <div id="tab-panel" class="tab-content" role="tabpanel" aria-labelledby="tab-equipment" tabindex="0"></div>
+          <div class="archive-footer"><span class="save-dot" aria-hidden="true"></span><span id="save-message">Progress saves automatically</span></div>
+        </section>
+        <p class="sidebar-footnote">“The sea remembers what the world forgets.”</p>
+      </aside>
+    </div>
+    <footer class="site-footer"><span>ISIDRIS • A STORY YET TO BE WRITTEN</span><span>Built for changing, expanding, and making your own.</span></footer>
+  </div>
+
+  <!-- Edit js/game-data.js to change the story. Edit css/style.css to change the design. -->
+  <script src="js/game-data.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

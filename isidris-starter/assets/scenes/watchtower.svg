@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-label="Illustration of an old watchtower overlooking the sea">
+ <defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#587e8a"/><stop offset=".65" stop-color="#b2bdb6"/><stop offset="1" stop-color="#e0c5a6"/></linearGradient>
+  <linearGradient id="water" x2="0" y2="1"><stop stop-color="#759c98"/><stop offset="1" stop-color="#2b515f"/></linearGradient>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".4" numOctaves="3" seed="12"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".1"/></feComponentTransfer></filter>
+ </defs>
+ <rect width="1200" height="650" fill="url(#sky)"/><circle cx="255" cy="150" r="76" fill="#eacdae" opacity=".85"/>
+ <path d="M0 372q125-46 245-25t188-4q115-55 210-17t200 14q160-38 357-12v70H0Z" fill="#678989" opacity=".65"/>
+ <rect y="377" width="1200" height="273" fill="url(#water)"/>
+ <g fill="none" stroke="#d2d6c2" stroke-width="1.5" opacity=".35"><path d="M0 421q129-9 229 0M344 448q156-9 285 0M724 431q164-9 320 0M62 509q131-10 266 0M452 539q102-10 217 0M753 552q111-12 255 0"/></g>
+ <!-- remote island -->
+ <path d="M0 408q60-49 140-49 70-45 154-8 55 7 119 57Z" fill="#526e70" opacity=".85"/>
+ <!-- dramatic foreground cliff -->
+ <path d="M600 650l80-159 103-52 59-116 153-68 205 8v387Z" fill="#63746f"/>
+ <path d="M700 650l53-116 64-28 43-117 105-69 235-9v339Z" fill="#8c9281"/>
+ <path d="M835 650l95-145 67-91 80-33 123 2v267Z" fill="#a3a28a"/>
+ <path d="M891 560l105-146 43 53 50-48 111 43v188H868Z" fill="#525f5e" opacity=".5"/>
+ <g fill="none" stroke="#465d5d" opacity=".55" stroke-width="3"><path d="M755 532l70 34 39 84M842 324l91 34M992 269l102 65M1065 402l90 32M939 515l48 44"/></g>
+ <!-- Watchtower structure -->
+ <path d="M792 360L823 117h210l35 247Z" fill="#c5b9a0"/><path d="M804 369h263v24H790Z" fill="#657775"/>
+ <path d="M810 121l16-52h207l15 52Z" fill="#445c5c"/>
+ <path d="M824 125h-13V90h31v35M893 125V90h29v35M973 125V90h29v35M1023 125V90h31v35" fill="#586d68"/>
+ <path d="M890 360v-97q0-49 45-49t45 49v97Z" fill="#506767"/><path d="M920 360V256q0-29 15-29t15 29v104Z" fill="#2a484f"/>
+ <rect x="840" y="166" width="21" height="42" fill="#516966"/><rect x="1003" y="166" width="21" height="42" fill="#516966"/>
+ <g stroke="#917f68" stroke-width="2" opacity=".5"><path d="M845 122l-18 102M1021 136l19 175M826 251l34 30M1022 263l23 31"/></g>
+ <!-- banner -->
+ <path d="M935 90V12" stroke="#3c555a" stroke-width="5"/><path d="M940 14l95 22-29 34-66-13Z" fill="#b8a079"/><path d="M963 29l15 9-13 11" fill="none" stroke="#526563" stroke-width="4"/>
+ <!-- shoreline stairs -->
+ <g fill="#c4b49a" stroke="#65746d" stroke-width="2"><path d="M690 581l80-13 80 17-79 13Z"/><path d="M666 610l100-17 113 28-98 17Z"/><path d="M651 640l132-17 117 27H650Z"/></g>
+ <path d="M723 564l54-48M754 593l47-50M786 621l38-45" stroke="#3c5859" stroke-width="4"/>
+ <g stroke="#355963" stroke-width="3" fill="none"><path d="M444 212q21-12 44 4q18-13 39-4"/><path d="M548 165q15-9 30 4q18-8 32-2"/></g>
+ <rect width="1200" height="650" filter="url(#grain)" opacity=".48"/>
+</svg>

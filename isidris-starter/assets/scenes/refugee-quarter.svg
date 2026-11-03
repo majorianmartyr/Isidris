@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-label="Illustration of a refugee quarter">
+ <defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#849795"/><stop offset=".68" stop-color="#d7c1a0"/><stop offset="1" stop-color="#f2d2a3"/></linearGradient>
+  <linearGradient id="street" x2=".8" y2="1"><stop stop-color="#b9a58c"/><stop offset="1" stop-color="#796f64"/></linearGradient>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".38" numOctaves="3" seed="6"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".08"/></feComponentTransfer></filter>
+ </defs>
+ <rect width="1200" height="650" fill="url(#sky)"/><circle cx="865" cy="156" r="65" fill="#f7dcac" opacity=".75"/>
+ <path d="M0 332l112-42 97 25 139-41 133 44 118-38 111 41 92-39 110 43 188-23v240H0Z" fill="#71817b" opacity=".6"/>
+ <!-- rear houses -->
+ <g fill="#c2b09a"><path d="M320 256h173v222H320Z"/><path d="M500 224h180v256H500Z"/><path d="M685 272h197v204H685Z"/></g>
+ <g fill="#49666a"><path d="M295 263l106-84 116 77Z"/><path d="M473 232l121-87 106 79Z"/><path d="M662 279l105-77 138 70Z"/></g>
+ <g fill="#526b68"><rect x="355" y="314" width="30" height="53"/><rect x="432" y="314" width="30" height="53"/><rect x="552" y="283" width="37" height="62"/><rect x="625" y="283" width="30" height="62"/><rect x="750" y="313" width="38" height="53"/></g>
+ <!-- left foreground buildings -->
+ <path d="M0 91h166l164 148v411H0Z" fill="#a8a28f"/><path d="M0 65h183l177 174-25 31L154 111H0Z" fill="#485e60"/><path d="M0 318l132-24 36 356H0Z" fill="#8e9282"/>
+ <g fill="#455e60"><rect x="66" y="176" width="59" height="89"/><rect x="208" y="332" width="59" height="100"/></g>
+ <path d="M120 405l217 58v115l-240-73Z" fill="#c3a179"/><path d="M120 405l217 58v12l-217-47Z" fill="#8b785f"/>
+ <!-- right buildings -->
+ <path d="M928 185l147-92 125 62v495H905Z" fill="#8d9a8c"/><path d="M910 182l154-114 136 80v30l-135-70-155 104Z" fill="#486262"/>
+ <rect x="985" y="235" width="65" height="112" fill="#4e6c69"/><rect x="1110" y="239" width="60" height="113" fill="#4e6c69"/>
+ <path d="M901 430l299-59v177l-299 16Z" fill="#b6a48b"/>
+ <path d="M924 436l276-50v64l-276 53Z" fill="#d2b68f"/>
+ <!-- canopy across a street -->
+ <path d="M229 324Q489 284 928 356L915 415Q541 337 261 382Z" fill="#b6a280" opacity=".92"/>
+ <path d="M229 324Q489 284 928 356" fill="none" stroke="#5a6660" stroke-width="5"/>
+ <path d="M261 382Q541 337 915 415" fill="none" stroke="#807969" stroke-width="6"/>
+ <g stroke="#756d61" stroke-width="2" opacity=".55"><path d="M318 323l16 54M408 312l17 54M518 315l8 49M633 330l-5 51M754 348l-11 51M847 352l-14 48"/></g>
+ <!-- courtyard and alley perspective -->
+ <path d="M394 440h411l395 210H0Z" fill="url(#street)"/>
+ <g stroke="#7c8073" stroke-width="2" opacity=".5"><path d="M580 453L300 650M640 453l195 197M504 496h294M370 552h520M181 621h811"/></g>
+ <!-- fountain -->
+ <ellipse cx="613" cy="546" rx="105" ry="28" fill="#4b7778"/><path d="M525 524h179v31q-90 37-179 0Z" fill="#7f8e83"/><ellipse cx="614" cy="524" rx="89" ry="21" fill="#bcb29d"/><ellipse cx="614" cy="522" rx="77" ry="15" fill="#628b8b"/>
+ <path d="M608 514v-62" stroke="#bac3b2" stroke-width="8"/><path d="M608 450q-12-25 2-38q13 25-2 38" fill="#e2d5b5"/>
+ <!-- figures silhouettes -->
+ <g fill="#405556"><circle cx="451" cy="505" r="12"/><path d="M438 520l26 0 13 60h-49Z"/><circle cx="767" cy="486" r="10"/><path d="M757 497h22l11 53h-43Z"/><circle cx="822" cy="514" r="13"/><path d="M808 530h28l16 69h-57Z"/></g>
+ <!-- market props -->
+ <path d="M25 513l225-19 64 38-268 23Z" fill="#d1b18b"/><path d="M61 556l235-20v57l-235 29Z" fill="#9f8c76"/>
+ <g stroke="#536963" stroke-width="4"><path d="M76 611v-92M266 600v-79"/></g>
+ <g fill="#e6d5ae"><path d="M346 393l22 8-7 37-21-5Z"/><path d="M387 396l19 8-10 33-19-5Z"/></g>
+ <rect width="1200" height="650" filter="url(#grain)" opacity=".4"/>
+</svg>
